@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="CWMM2.MVVM.View.ModsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:uc="clr-namespace:CWMM2.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Foreground="White"
+                   FontSize="20"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20">
+            Explore mods...
+        </TextBlock>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+            <UniformGrid Columns="3">
+                <uc:ModControl ModName="Test mod" 
+                               ModVersion="1.0.0" 
+                               ModAuthor="Me" 
+                               ModDescription="A test mod"/>
+            </UniformGrid>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>
