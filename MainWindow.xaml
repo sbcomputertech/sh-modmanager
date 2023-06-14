@@ -10,7 +10,8 @@
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown">
 
     <Window.DataContext>
         <vm:MainViewModel/>
@@ -73,18 +74,32 @@
                 </RadioButton>
             </StackPanel>
 
-            <TextBlock Grid.Column="1"
-                       Foreground="White"
-                       FontSize="25"
-                       FontFamily="/Fonts/#Poppins"
-                       TextAlignment="Center"
-                       VerticalAlignment="Center">
-                Status bar: TODO
-            </TextBlock>
+            <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                        Margin="20,0,20,0"
+                        Grid.Column="1">
+                <Button Background="LightCyan"
+                        Command="{Binding QuitCommand}"
+                        Width="40"
+                        Height="40">
+                    <Button.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                           RadiusY="10"
+                                           Rect="0,0,40,40"/>
+                    </Button.Clip>
+                    
+                    <Image Source="/Images/icon_close.png"
+                           Width="30"
+                           Height="30"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                </Button>
+            </StackPanel>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
-                            Margin="10"
+                            Margin="15"
                             Content="{Binding CurrentView}"/>
         </Grid>
     </Border>

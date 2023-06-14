@@ -5,19 +5,23 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Fonts\Poppins-Black.ttf" />
-    <None Remove="Fonts\Poppins-Regular.ttf" />
+    <None Remove="Images\cobweb.png" />
+    <None Remove="Images\icon_close.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="MVVM\Model\" />
+    <PackageReference Include="AssetsTools.NET" Version="3.0.0-preview3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Fonts\Poppins-Regular.ttf" />
+    <Resource Include="Images\cobweb.png" />
+    <Resource Include="Images\icon_close.png" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,7 @@
 ﻿using CWMM2.Core;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 
 namespace CWMM2.MVVM.ViewModel
 {
@@ -19,6 +17,9 @@ namespace CWMM2.MVVM.ViewModel
             }
         }
 
+        public RelayCommand QuitCommand { get; private set; }
+        public RelayCommand DragCommand { get; private set; }
+
         public HomeViewModel HomeVM { get; private set; }
         public ModsViewModel ModsVM { get; private set; }
 
@@ -26,6 +27,9 @@ namespace CWMM2.MVVM.ViewModel
         public RelayCommand ModsViewCommand { get; private set; }
 
         public MainViewModel() {
+            QuitCommand = new RelayCommand(o => Environment.Exit(0));
+            DragCommand = new RelayCommand(o => MessageBox.Show(o.GetType().FullName));
+
             HomeVM = new HomeViewModel();
             ModsVM = new ModsViewModel();
 

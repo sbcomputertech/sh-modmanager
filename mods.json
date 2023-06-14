@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Sleep Deprived",
+        "guid": "com.reddust9.sd",
+        "version": "1.0.1",
+        "author": "reddust9",
+        "source": "https://github.com/sbcomputertech/sleep-deprived-mod",
+        "binary": "{source}/releases/download/{version}/SleepDeprived.dll"
+    },
+    {
+        "name": "Custom Cursor",
+        "guid": "com.mayster911.customcursor",
+        "version": "1.0.0",
+        "author": "Mayster911",
+        "source": "https://github.com/Mayster911/CustomCursor",
+        "binary": "{source}/releases/download/{version}/CustomCursor.zip"
+    }
+]
