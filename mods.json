@@ -14,5 +14,45 @@
         "author": "Mayster911",
         "source": "https://github.com/Mayster911/CustomCursor",
         "binary": "{source}/releases/download/{version}/CustomCursor.zip"
+    },
+    {
+        "name": "Weapon Spawn Menu",
+        "guid": "com.reddust9.weaponspawner",
+        "version": "1.0.0",
+        "author": "reddust9",
+        "source": "https://github.com/sbcomputertech/weapon-spawn-menu",
+        "binary": "{source}/releases/download/{version}/WeaponSpawnMenu.dll"
+    },
+    {
+        "name": "Infinite Ammo",
+        "guid": "me.septikai.InfiniteAmmo",
+        "version": "1.1.1",
+        "author": "Septikai",
+        "source": "https://github.com/Septikai/InfiniteAmmo",
+        "binary": "{source}/releases/download/{version}/InfiniteAmmo.dll"
+    },
+    {
+        "name": "One Shot",
+        "guid": "me.septikai.OneShot",
+        "version": "1.1.1",
+        "author": "Septikai",
+        "source": "https://github.com/Septikai/OneShot",
+        "binary": "{source}/releases/download/{version}/OneShot.dll"
+    },
+    {
+        "name": "Always Christmas",
+        "guid": "com.reddust9.alwayschristmas",
+        "version": "1.0.0",
+        "author": "reddust9",
+        "source": "https://github.com/sbcomputertech/spidermas",
+        "binary": "{source}/releases/download/{version}/AlwaysChristmas.dll"
+    },
+    {
+        "name": "No Lava",
+        "guid": "com.reddust9.nolavaport",
+        "version": "2.0.0",
+        "author": "reddust9, niiK0",
+        "source": "https://github.com/sbcomputertech/NoLavaPort",
+        "binary": "{source}/releases/download/{version}/NoLava.dll"
     }
 ]
